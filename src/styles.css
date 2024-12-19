@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+    background-color: black; 
+    height: 100vh; width: 100vw;
+    margin: 0; padding: 0;
+}
+
+#layeroption {
+  position:absolute; 
+  top:0; 
+  left:0;
+  background: rgba(42, 42, 42, 0.8);
+  color:white;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+#layeroption input {
+  vertical-align: middle;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+#layeroption table tr {
+  transform: translateY(0);
+  transition: transform 0.4s ease-out;
+}
+
+#layeroption table tr.up {
+  transform: translateY(33px);
+  transition: none;
+}
+
+#layeroption table tr.down {
+  transform: translateY(-33px);
+  transition: none;
+}
+
+.close-button {
+  padding: 5px;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: none;
+}
+
+.close-button:hover {
+  background-color: darkred;
+}
+.cesium-widget,
+.cesium-widget canvas {
+  width: 99vw;
+  height: 99vh;
+  touch-action: none;
+  margin: 0; padding: 0;
+}
+.cesium-widget-credits{
+    display:none !important;
+}
+
